@@ -1,0 +1,220 @@
+@import url()
+*{
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;
+}
+@media screen and (max-width: 375px){
+	section{
+		flex-direction: column;
+	}
+	.first-container h2{
+		text-align: center;
+		margin:30px 0px;
+	}
+	.first-container p{
+		text-align: center;
+		margin-bottom: 30px
+	}
+	.second-container{
+		align-items: center;
+	}
+	.end{
+		margin-bottom:30px;
+	}
+
+} 
+body{
+	background-image: url(bg-intro-desktop.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: cover;
+	background-color: hsl(0, 100%, 74%);
+	font-family: "Poppins", sans-seriff;
+}
+section{
+	display:flex;
+	align-items: center;
+	justify-content:space-between;
+	width:80%;
+	margin:auto;
+	height: 100vh;
+}
+
+.second-container{
+	margin: auto 10% auto 25px;
+}
+.first-container{
+	margin: auto 5% auto 10%;
+	flex:50%;
+}
+.first-container h2{
+	color:hsl(0, 0%, 96%);
+	font-weight: 700;
+	margin-bottom:10px;
+	width:100%;
+	font-size:40px;
+	line-height: 40px;
+}
+.first-container p{
+	color:hsl(0, 0%, 96%);
+	line-height: 25px;
+	font-size: 20px;
+	padding-top: 10px;
+	font-weight: 400;
+	width:100%;
+}
+.second-container{
+	display: flex;
+	flex-direction: column;
+	margin:50px 0;
+	width: 100%;
+	flex: 50%;
+}
+.start{
+	background-color: hsl(248, 32%, 49%);
+	margin-bottom: 14px;
+	border-radius: 5px;
+	box-shadow: 0px 7px hsla(360, 0%, 1%,0.2);
+}
+.start p{
+	text-align: center;
+	padding:13px 34px;
+	color:hsl(0, 5%, 90%);
+}
+.start span{
+	font-weight: bolder;
+	color:hsl(0, 0%, 96%);
+}
+.end{
+	background-color: white;
+	border-radius:5px;
+	padding: 30px;
+	box-shadow: 0px 8px hsla(360, 0%, 1%,0.2);
+}
+
+.end input{
+	padding:20px;
+	width:90%;
+	display:block;
+	margin-bottom:25px;
+	border-radius:5px;
+	border:1px solid hsla(360, 0%, 1%,0.2);
+}
+.error.error-message input{
+	border-color: hsl(0, 100%, 74%);
+}
+input:active{
+	border:0.5px solid hsla(360, 0%, 1%,0.2);
+}
+.end button{
+	padding:20px;
+	width:100%;
+	margin-bottom:10px;
+	border-radius:5px;
+	background-color:hsl(154, 59%, 51%); 
+	box-shadow: 0px 2px hsla(360, 0%, 1%,0.2);
+	border:none;
+	color:hsl(0,0%,96%);
+}
+.end button:active{
+	cursor: pointer;
+}
+.text{
+	font-size: small;
+	width:100%;
+	text-align: center;
+	color:hsla(360, 0%, 1%,0.4);
+	margin-bottom: 3px;
+}
+.text span{
+	color:hsl(0, 100%, 74%);
+	font-weight: bold;
+}
+.error{
+	position: relative;
+}
+img{
+	width:25px;
+	height:25px;
+	position: absolute;
+	right:18px;
+	bottom: 22px;
+	visibility: hidden;
+}
+.error.error-message img{
+	visibility: visible;
+}
+.error small{
+	position:absolute;
+	bottom: -15px;
+	right:0px;
+	visibility: hidden;
+}
+.error.error-message small{
+	color: hsl(0, 100%, 74%);
+	visibility: visible;
+}
+
+
+
+
+
+/*style-guide.md
+Who has access
+G
+System properties
+Type
+Text
+Size
+475 bytes
+Storage used
+475 bytes
+Location
+Registration-form
+Owner
+Goodnews Sandy
+Modified
+May 29, 2022 by Goodnews Sandy
+Opened
+11:31 PM by me
+Created
+May 29, 2022
+No description
+Viewers can download
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Red: hsl(0, 100%, 74%) 
+- Green: hsl(154, 59%, 51%)
+
+### Accent
+
+- Blue: hsl(248, 32%, 49%)
+
+### Neutral
+
+- Dark Blue: hsl(249, 10%, 26%) 
+- Grayish Blue: hsl(246, 25%, 77%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 500, 600, 700
+*/
