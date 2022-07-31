@@ -7,9 +7,9 @@
     <link rel="preconnect" href="https://fonts.google.com/specimen/Poppins">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Flex Box</title>
+    
   </head>
   <body>
-
   	<main>
   		<section>
   			<div class="first-container">
@@ -20,25 +20,25 @@
   				<div class="start"><p><span>Try it free 7 days</span> then $20/mo. thereafter</p></div>
   				<div class="end">
   					<form id="form" action="#">
-              <div class="error error-message">
+              <div class="form-container class-error">
                 <input id="fname" type="text" placeholder="First Name" name="fname" required>
-                <img src="icon-error.svg"  alt="error message">
-                <small>Last name cannot be empty</small> 
+                <img src="icon-error.svg"  alt="error message" class="class-error">
+                <small>First name cannot be empty</small> 
               </div>
-  				    <div class="error error-message">
+  				    <div class="form-container class-error">
                 <input id="lname" type="text" placeholder="Last Name" name="lname" required>
-                <img src="icon-error.svg"  alt="error message">
+                <img src="icon-error.svg"  alt="error message" class="class-error">
+                <small>Last name cannot be empty</small>
+              </div>
+              <div id="email" class="form-container class-error">
+                <input type="Email"  placeholder="Email Address" name="mail" required>
+                <img src="icon-error.svg" alt="error message">
                 <small>Looks like this is not an email</small>
               </div>
-              <div id="email" class="error error-message">
-                <input type="Email" placeholder="Email Address" name="mail" required>
-                <img src="icon-error.svg" alt="error message">
-                <small>Password cannot be empty</small>
-              </div>
-              <div id="Password" class="error  error-message">
+              <div id="Password" class="form-container class-error">
                 <input type="Password" placeholder="Password" name="pwd" required>
                 <img src="icon-error.svg"  alt="error message">
-                <small>First name cannot be empty</small>
+                <small>Password cannot be empty</small>
               </div class="error">
   						<button class="btn">CLAIM YOUR FREE TRIAL</button>
   					</form>
@@ -46,8 +46,7 @@
   				</div>
   			</div>
   		</section>
-  		
   	</main>
-    <sript src=java.js></sript>
+    <sript src=java.js></sript> 
   </body>
   </html>

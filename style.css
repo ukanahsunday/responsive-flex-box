@@ -93,7 +93,7 @@ section{
 	box-shadow: 0px 8px hsla(360, 0%, 1%,0.2);
 }
 
-.end input{
+.form-container input{
 	padding:20px;
 	width:90%;
 	display:block;
@@ -101,12 +101,15 @@ section{
 	border-radius:5px;
 	border:1px solid hsla(360, 0%, 1%,0.2);
 }
-.error.error-message input{
-	border-color: hsl(0, 100%, 74%);
-}
+
 input:active{
 	border:0.5px solid hsla(360, 0%, 1%,0.2);
 }
+
+.class-error input{
+	border-color: hsl(0, 100%, 74%);
+}
+
 .end button{
 	padding:20px;
 	width:100%;
@@ -131,27 +134,25 @@ input:active{
 	color:hsl(0, 100%, 74%);
 	font-weight: bold;
 }
-.error{
+.form-container{
 	position: relative;
 }
-img{
+.form-container img{
 	width:25px;
 	height:25px;
 	position: absolute;
 	right:18px;
 	bottom: 22px;
-	visibility: hidden;
 }
-.error.error-message img{
+.class-error img{
 	visibility: visible;
 }
-.error small{
+.form-container small{
 	position:absolute;
 	bottom: -15px;
 	right:0px;
-	visibility: hidden;
 }
-.error.error-message small{
+.class-error small{
 	color: hsl(0, 100%, 74%);
 	visibility: visible;
 }
